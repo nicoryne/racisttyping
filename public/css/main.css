@@ -1,0 +1,143 @@
+
+:root {
+    --bg-color:#323437;
+    --main-color:#e2b714;
+    --sub-color:#646669;
+    --text-color:#d1d0c591;
+    --correct-color:#ffffff;
+    --incorrect-color: #840606;
+    --font: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{ background-color: var(--bg-color);}
+
+body{
+    min-height: 100vh;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+body, .quote-input {
+    font-family: var(--font);
+}
+
+.container {
+    background-color:var(--bg-color);
+    padding: 1rem;
+    border-radius: 0.5rem;
+    width: 100%;
+    max-width: 90%;
+}
+
+.timer {
+    position: absolute;
+    top: 1rem;
+    font-size: 3rem;
+    color:var(--main-color);
+    font-weight:bold;
+}
+
+
+.quote-display {
+    font-size: 20px;
+    margin-bottom: -90px;
+    margin-left: calc(20px + 2px);
+    margin-right: calc(20px + 2px);
+}
+
+
+
+.quote-input {
+    background-color: white;
+    border: 2px solid var(--main-color);
+    outline: none;
+    width: 100%;
+    height: 8rem;
+    margin: auto;
+    resize: none;
+    padding: 0.5rem 1rem;
+    font-size: 20px;
+    border-radius: 0.5rem;
+}
+
+textarea{
+    color: white;
+    user-select: none;
+    float: right;
+}
+
+textarea::selection {
+    background-color: white; 
+    color: transparent; 
+  }
+
+.quote-input:focus {
+    border-color: var(--sub-color);
+}
+
+.quote-input, text {
+    opacity:5%;
+}
+
+.correct {
+    color: var(--correct-color);
+}
+
+.incorrect {
+    color: var(--incorrect-color);
+}
+
+.waiting {
+    color: var(--text-color);
+}
+
+.mistake{
+    color: rgb(206, 206, 220);
+    display: flex;
+    height: 20px;
+    position: absolute;
+    top: 16rem;
+    left: 6.5rem;
+    align-items: center;
+    font-size: 15px;
+    
+}
+
+.WordPerMin{
+    color: rgb(206, 206, 220);
+    display: flex;
+    height: 20px;
+    position: absolute;
+    top: 29.5rem;
+    left: 80rem;
+    align-items: center;
+    font-size: 15px;
+    
+}
+
+.CharPerSec{
+    color: rgb(206, 206, 220);
+    display: flex;
+    height: 20px;
+    position: absolute;
+    top: 29.5rem;
+    left: 85rem;
+    align-items: center;
+    font-size: 15px; 
+}
+
+.Records span{
+    padding-left: 5px;
+}
+
+
