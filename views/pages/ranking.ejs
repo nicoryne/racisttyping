@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../public/css/ranking.css" type="text/css">
+    <title>CONGRATULATIONS</title>
+</head>
+<body> 
+  <form>
+    <div class="container">
+      <b><p class="rank">Top Racers</p></b>
+    </div>
+    
+    <div class="list">
+      <ol type="1">
+        <% users.forEach((user, index) => { %>
+          <li class="num<%= index + 1 %>">
+            <span class="name<%= index + 1 %>"><%= user.username %></span>
+            <span class="wpm">WPM</span>
+            <span class="r<%= index + 1 %>"><%= user.wpm %></span>
+            <% if (index === 0) { %>
+              <img class="gold" src="/public/img/goldMedal.png">
+            <% } else if (index === 1) { %>
+              <img class="silver" src="/public/img/silverMedal.png">
+            <% } else if (index === 2) { %>
+              <img class="bronze" src="/public/img/bronzeMedal.png">
+            <% } %>
+          </li>
+        <% }) %>
+      </ol>
+    </div>
+  </form>
+</body>
+</html>

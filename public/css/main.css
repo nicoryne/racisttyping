@@ -140,4 +140,7 @@ textarea::selection {
     padding-left: 5px;
 }
 
+.username-element {
+    color:var(--main-color);
+}
 

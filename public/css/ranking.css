@@ -1,0 +1,82 @@
+:root {
+    --bg-color:#323437;
+    --main-color:#e2b714;
+    --sub-color:#646669;
+    --text-color:#d1d0c591;
+    --correct-color:#ffffff;
+    --incorrect-color: #840606;
+    --font: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+html{ background-color: var(--bg-color);}
+
+form {
+    min-height: 100vh;
+    height: 200%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+.container {
+    background-color:var(--sub-color);
+    position: absolute;
+    height: 25rem;
+    padding: 5rem;
+    border-radius: 0.5rem;
+    width: 40%;
+    max-width: 90%;
+}
+
+.rank {
+    color: var(--main-color);
+    position: relative;
+    font-size: 40px;
+    bottom: 80px;
+    left: 13rem;
+}
+
+.list{
+    position: relative;
+    top: 3rem;
+    right: 5rem;
+    color: var(--correct-color);
+    font-size: 2rem;
+}
+
+.list li{
+    align-items: center;
+}
+
+.num1, .num2, .num3, .num4, .num5{
+    padding-bottom: 2.5rem;
+    margin: 0;
+}
+
+.wpm {
+    padding-left: 15rem;
+}
+
+
+img {
+    width: 2.5rem;
+}
+
+.gold {
+    position: absolute;
+    top: 1rem;
+    left: 32rem;
+}
+
+.silver {
+    position: absolute;
+    top: 6rem;
+    left: 32rem;
+}
+
+.bronze {
+    position: absolute;
+    top: 11rem;
+    left: 32rem;
+}
